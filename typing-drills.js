@@ -1,31 +1,47 @@
-const num1 = 1, num2 = 10;
-let i = num1;
-const intervalId = setInterval(() => {
-    console.log(i++);
-    if (i === num2 + 1)
-        clearInterval(intervalId);
-}, 1000);
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    setTimeout(console.log, (num1 - i) * 1000, i);
+}
 
-const num1 = 1, num2 = 10;
-let i = num1;
-const intervalId = setInterval(() => {
-    console.log(i++);
-    if (i === num2 + 1)
-        clearInterval(intervalId);
-}, 1000);
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    (function (i) {
+        setTimeout(function() { console.log(i); }, (num1 - i) * 1000);
+    })(i);
+}
 
-const num1 = 1, num2 = 10;
-let i = num1;
-const intveralId = setInterval(() => {
-    console.log(i++);
-    if (i === num2 + 1)
-        clearInterval(intervalId);
-}, 1000);
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    setTimeout(console.log, (num1 - i) * 1000, i);
+}
 
-const num1 = 1, num2 = 10;
-let i = num1;
-const intervalId = setInterval(() => {
-    console.log(i++)
-    if (i === num2 + 1)
-        clearInterval(intervalId);
-}, 1000);
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    (function (i) {
+        setTimeout(function() { console.log(i);}, (num1 - i) * 1000);
+    })(i);
+}
+
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    setTimeout(console.log, (num1 - i) * 1000, i);
+}
+
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    (function (i) {
+        setTimeout(function() { console.log(i); }, (num1 - i) * 1000);
+    })(i);
+}
+
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    setTimeout(console.log, (num1 - i) * 1000, i);
+}
+
+var num1 = 10, num2 = 1;
+for (var i = num1; i >= num2; i--) {
+    (function (i) {
+        setTimeout(function() { console.log(i); }, (num1 - i) * 1000);
+    })(i);
+}
