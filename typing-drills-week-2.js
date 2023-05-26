@@ -68,40 +68,78 @@ function callbackManager(asyncFuncs) {
 
 callbackManager([asyncFuns1, asyncFunc2, asyncFunc3]);
 
-//
+// Day Three
 
 function asyncFunc1(callback) {
-    console.log('Started asyncFunc1');
     setTimeout(() => {
-        console.log('Completed asyncFunc1');
-        callback();
+        callback(1);
     }, 3000);
 }
 
 function asyncFunc2(callback) {
-    console.log('Started asyncFunc2');
     setTimeout(() => {
-        console.log('Completed asyncFunc2');
-        callback();
+        callback(2);
     }, 2000);
 }
 
 function asyncFunc3(callback) {
-    console.log('Started asyncFunc3');
     setTimeout(() => {
-        console.log('Completed asyncFunc3');
-        callback();
+        callback(3);
     }, 1000);
 }
 
-function callbackManager(asyncFuncs) {
-    function nextFuncExector() {
-        const next AsyncFunc = asyncFuncs.shift();
-        if (nextasyncFunc && typeof nextAsyncFunc === 'function') {
-            nextAsyncFunc(nextFuncExecutor, asyncFuncs);
-        }
-    }
-    nextFuncExecutor();
+asyncParallel([asyncFunc1, asyncFunc2, asyncFunc3], result => {
+    console.log(result);
+});
+
+//
+
+function asyncFunc1(callback) {
+    setTimeout(() => {
+        callback(1);
+    }, 3000)
 }
 
-callbackManager([asyncFunc1, asyncFunc2, asyncFunc3]);
+function asyncFunc2(callback) {
+    setTimeout(() => {
+        callback(2);
+    }, 2000)
+}
+
+function asyncFunc3(callback) {
+    setTimeout(() => {
+        callback(3);
+    }, 1000)
+}
+
+asyncParallel([asyncFunc1, asyncFunc2, asyncFunc3], result => {
+    console.log(result);
+});
+
+//
+
+function asyncFun1(callback) {
+    setTimeout(() => {
+        callback(1);
+    }, 3000)
+}
+
+function asyncFunc2(callback) {
+    setTimeout(() => {
+        callback(2);
+    }, 2000)
+}
+
+function asyncFunc3(callback) {
+    setTimeout(() => {
+        callback(3);
+    }, 1000)
+}
+
+asyncParallel([asyncFunc1, asyncFunc2, asyncFunc3], result => {
+    console.log(result);
+});
+
+// 
+
+function asyncFun
