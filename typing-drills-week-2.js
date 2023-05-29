@@ -139,7 +139,3 @@ function asyncFunc3(callback) {
 asyncParallel([asyncFunc1, asyncFunc2, asyncFunc3], result => {
     console.log(result);
 });
-
-// 
-
-function asyncFun
