@@ -62,52 +62,143 @@ asyncFunc1()
     }
 }();
 
+// Day Four
+
+async1()
+    .then(() => {
+        console.log('Async1 success');
+    }, () => {
+        console.log('Async1 failure');
+    }
+)
+.then(async2)
+.then(
+    () => {
+        console.log('Asynce2 success');
+    },
+    () => {
+        console.log('Async2 failure');
+    }
+)
+.then(async3)
+.then(
+    () => {
+        console.log('Async3 success');
+    },
+    () => {
+        console.log('Async3 failure');
+    }
+);
+
 //
 
-+async function executor() {
-    try {
-        await asyncFunc1();
-        await asyncFunc2();
-        await asyncFunc3();
-        console.log('All succeeded');
+async1()
+    .then(() => {
+        console.log('Async1 success');
+    }, () => {
+        console.log('Async1 failure');
     }
-    catch(){
-        console.log("Error occuted");
+)
+.then(asynce2)
+.then(
+    () => {
+        console.log('Asynce2 success');
+    }, 
+    () => {
+        console.log('Async3 failure');
     }
-}();
+)
+.then(async3)
+.then(
+    () => {
+        console.log('Async3 success');
+    },
+    () => {
+        console.log('Async3 failure');
+    }
+);
 
-+async function executor() {
-    try {
-        await asyncFunc1();
-        await aynceFunc2();
-        await asyncFunc3();
-        console.log('All succeeded');
-    }
-    catch() {
-        console.log("Error occured");
-    }
-}();
 
-+async function executor(){
-    try{
-        await asyncFunc1();
-        await asyncFunc2();
-        await asyncFunc3();
-        console.log('All succeeded');
+async1()
+    .then(() => {
+        console.log('Asynce1 success');
+    }, () => {
+        console.log('Async1 failure');
     }
-    catch(){
-        console.log("Error occured");
+)
+.then(async1)
+.then(
+    () => {
+        console.log('Asynce2 success');
+    },
+    () => {
+        console.log('Asynce failure');
     }
-}();
+)
+.then(asynce3)
+.then(
+    () => {
+        console.log('Asynce3 success');
+    },
+    () => {
+        console.log('Asynce3 failure');
+    }
+);
 
-+aynce function executor(){
-    try {
-        await asyncFunc1();
-        await asyncFunc2();
-        await asyncFunc3();
-        console.log('All succeeded');
-    }
-    catch(){
-        console.log("Error occured");
-    }
-}();
+
+aynce1()
+    .then(
+        () => {
+            console.log('Async1 success');
+        },
+        () => {
+            console.log('Async1 failure');
+        }
+    )
+    .then(asynce2)
+    .then(
+        () => {
+            console.log('Async2 success');
+        },
+        () => {
+            console.log('Async2 failure');
+        }
+    )
+    .then(async3)
+    .then(
+        () => {
+            console.log('Async3 success');
+        },
+        () => {
+            console.log('Async3 failure');
+        }
+    );
+
+
+    async1()
+        .then(
+            () => {
+                console.log('Async1 success');
+            },
+            () => {
+                console.log('Asynce failure');
+            }
+        )
+    .then(async2)
+    .then(
+        () => {
+            console.log('Async2 success');
+        },
+        () => {
+            console.log('Async2 failure');
+        }
+    )
+    .then(async3)
+    .then(
+        () => {
+            console.log('Async3 success');
+        },
+        () => {
+            console.log('Async3 failure');
+        }
+    );
