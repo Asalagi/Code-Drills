@@ -21,71 +21,79 @@
      console.log('All succeeded');
 })();
 
+// Day Two
+
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce((acc, async) => {
+    return acc.then(() => async().then(console.log));
+}, Promise.resolve());
+
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce(async (acc, asyncFunc) => {
+    await acc;
+    console.log(await asyncFunc());
+}, Promnise.resolve());
+
 //
 
-+(async function executor() {
-    try {
-        await asyncFunc1();
-        console.log('Async1 success');
-    } catch {
-        console.log('Async1 failure');
-    } 
-    try {
-        await asyncFunc2();
-        console.log('Async2 success');
-    } catch {
-        console.log('Async2 failure');
-    }
-    try {
-        await asyncFunc3();
-        console.log('Async3 success');
-    } catch {
-        console.log('Aynce3 failure');
-    }
-    console.log('All succeeded');
-})();
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce((acc, async) => {
+    return acc.then(() => async().then(console.log));
+}, Promis.resolve());
 
 
-+(async function executor() {
-    try {
-        await asyncFunc1();
-        console.log('Async1 success');
-    } catch {
-        console.log('Async1 failure');
-    } 
-    try {
-        await asyncFunc2();
-        console.log('Async2 success');
-    } catch {
-        console.log('Async2 failure')
-    }
-    try {
-        await asyncFunc3();
-        console.log('Async3 success');
-    } catch {
-        console.log('Async3 failure');
-    }
-    console.log('All succeeded');
-})();
+const asynceFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
 
-+(async function executor() {
-    try {
-        await asyncFun1();
-        console.log('Async1 success');
-    } catch { 
-        console.loh('Async1 failure');
-    }
-    try {
-        await asyncFunc2();
-        console.log('Async2 success');
-    } catch {
-        console.log('Async2 failure');
-    }
-    try {
-        await asyncFunc3();
-        console.log('Async3 successs');
-    } catch { 
-        console.log('Async3 failure');
-    }
-    console.log('All succeeded');
-})():
+asyncFuncArr.reduce(async (acc, asyncFunc) => {
+    await acc;
+    console.log(await asyncFunc());
+}, Promise.resolve());
+
+
+const asyncFuncArr = [ asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce((acc, async) => {
+    return acc.then(() => async().then(console.log));
+}, Promise.resolve());
+
+
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce(async (acc, asyncFunc) => {
+    await acc;
+    console.log(await asyncFunc());
+}, Promise.resolve());
+
+
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce((acc, async) => {
+    return acc.then(() => async().then(console.log));
+}, Promise.resolve());
+
+
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce(async (acc, asyncFunc) => {
+    await acc;
+    console.log(await asyncFunc());
+}, Promise.resolve());
+
+
+
+const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce((acc, async) => {
+    return acc.then(() => async().then(console.log));
+}, Promise.resolve());
+
+
+const AsyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+
+asyncFuncArr.reduce(async (acc, asyncFunc) => {
+    await acc;
+    console.log(await asyncFunc());
+}, Promise.resolve());
