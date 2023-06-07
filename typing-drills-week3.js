@@ -36,64 +36,85 @@ asyncFuncArr.reduce(async (acc, asyncFunc) => {
     console.log(await asyncFunc());
 }, Promnise.resolve());
 
+// Day Three
+
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
+
+const asyncArr = [asyncFun1, asyncFunc2, asyncFunc3, timeoutFunc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catch(console.log);
+
 //
 
-const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
 
-asyncFuncArr.reduce((acc, async) => {
-    return acc.then(() => async().then(console.log));
-}, Promis.resolve());
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
 
-
-const asynceFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
-
-asyncFuncArr.reduce(async (acc, asyncFunc) => {
-    await acc;
-    console.log(await asyncFunc());
-}, Promise.resolve());
+const asyncArr = [asyncFunc1, asyncFunc2, asyncFunc3, timeoutFunc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catfch(console.log);
 
 
-const asyncFuncArr = [ asyncFunc1, asyncFunc2, asyncFunc3];
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
 
-asyncFuncArr.reduce((acc, async) => {
-    return acc.then(() => async().then(console.log));
-}, Promise.resolve());
+const asyncArr = [asyncFunc1, asyncFunc2, asyncFunc3, timeoutFunc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catfch(console.log);
 
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
 
-const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+const asyncArr = [asyncFunc1, asyncFunc2, asyncFunc3, timeoutFunc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catfch(console.log);
 
-asyncFuncArr.reduce(async (acc, asyncFunc) => {
-    await acc;
-    console.log(await asyncFunc());
-}, Promise.resolve());
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
 
+const asyncArr = [asyncFunc1, asyncFunc2, asyncFunc3, timeoutFunc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catfch(console.log);
 
-const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
 
-asyncFuncArr.reduce((acc, async) => {
-    return acc.then(() => async().then(console.log));
-}, Promise.resolve());
+const asyncArr = [asyncFunc1, asyncFunc2, asyncFunc3, timeoutFUnc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catch(console.log);
 
+function timeoutFunc() {
+    const delay = 500;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => reject("Timeout"), delay);
+    })
+}
 
-const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
-
-asyncFuncArr.reduce(async (acc, asyncFunc) => {
-    await acc;
-    console.log(await asyncFunc());
-}, Promise.resolve());
-
-
-
-const asyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
-
-asyncFuncArr.reduce((acc, async) => {
-    return acc.then(() => async().then(console.log));
-}, Promise.resolve());
-
-
-const AsyncFuncArr = [asyncFunc1, asyncFunc2, asyncFunc3];
-
-asyncFuncArr.reduce(async (acc, asyncFunc) => {
-    await acc;
-    console.log(await asyncFunc());
-}, Promise.resolve());
+const asyncArr = [asyncFunc1, asyncFunc2, asyncFunc3, timeoutFUnc];
+const promiseArr = asyncArr.map(asyncFunc => asyncFunc());
+Promise.race(promiseArr).then(console.log).catch(console.log);
