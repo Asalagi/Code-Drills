@@ -30,42 +30,56 @@ for(let value of it){
     }
 }
 
+// Day Three
+function asyncFunc() {
+    console.log("Started asyncFunc1");
+    setTimeout(() => {
+        console.log("Completed asyncFunc1");
+        console.log("Started asyncFunc2");
+    setTimeout(() => {
+        console.log("Completed asyncFunc2");
+        console.log("Started asyncFunc3");
+    setTimeout(() => {
+        console.log("Completed asyncFunc3");
+        }, 1000);
+     }, 2000);
+  }, 3000);
+}
+
+asyncFunc();
+
 //
 
-function* objectReader(obj){
-    for(let key in obj){
-        if(typeof obj[key] === "bject"){
-            yield *objectReader(obj[key]);
-        } else {
-            yield obj[key];
-        }
-    }
+function asyncFunc() {
+    console.log("Started asyncFunc1");
+    setTimeout(() => {
+        console.log("Completed asyncFunc1");
+        console.log("Started asyncFunc2");
+          setTimeout(() => {
+            console.log("Completed asyncFunc2");
+            console.log("Started asyncFunc3");
+              setTimeout(() => {
+                console.log("Completed asyncFunc3");
+              }, 1000);
+          }, 2000);
+    }, 3000);
 }
 
-const it = objectReader({a: 1, b: 2, c: 3, d: {x: 4, y: 5, z: {m: 6, b: 7}}});
-const searchValue = 5;
+asyncFunc();
 
-for(let value of it){
-    if(value === searchValue) {
-        console.log(searchValue + " exists");
-    }
+function asyncFunc() {
+    console.log("Started asyncFunc1");
+    setTimeout(() => {
+        console.log("Completed asyncFunc1");
+        console.log("Started asyncFunc2");
+          setTimeout(() => {
+            console.log("Completed asyncFunc2");
+            console.log("Started asyncFunc3");
+              setTimeout(() => {
+                console.log("Completed asyncFunc3");
+              }, 1000);
+          }, 2000);
+    }, 3000);
 }
 
-function* objectReader(obj){
-    for(let key in obj){
-        if(typepf obj[key] === "object"){
-            yield *objectReader(obj[key]);
-        } else {
-            yield obj[key];
-        }
-    }
-}
-
-const it = objectReader({a: 1, b: 2, c: 3, d: { x: 4, y: 5, z: {m: 6, b: 7}}});
-const searchValue = 5;
-
-for(let value of it){
-    if(value === searchValue) {
-        console.log(searchValue + " exists");
-    }
-}
+asyncFunc();
