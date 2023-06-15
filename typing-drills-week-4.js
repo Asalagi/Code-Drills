@@ -48,38 +48,55 @@ function asyncFunc() {
 
 asyncFunc();
 
+// Day Four
+const xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+xhr.onload = function () {
+    console.log(this.response);
+};
+xhr.onerror = function () {
+    console.log(this.statusText);
+};
+xhr.send();
+
 //
 
-function asyncFunc() {
-    console.log("Started asyncFunc1");
-    setTimeout(() => {
-        console.log("Completed asyncFunc1");
-        console.log("Started asyncFunc2");
-          setTimeout(() => {
-            console.log("Completed asyncFunc2");
-            console.log("Started asyncFunc3");
-              setTimeout(() => {
-                console.log("Completed asyncFunc3");
-              }, 1000);
-          }, 2000);
-    }, 3000);
-}
+const xhr = new XMLHttpResquest();
+xhr.open("GET", url);
+xhr.onload = function () {
+    console.log(this.response);
+};
+xhr.onerror = function () {
+    console.log(this.statusText);
+};
+xhr.send();
 
-asyncFunc();
+const xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+xhr.onload = function () {
+    console.log(this.response);
+};
+xhr.onerror = function () {
+    console.log(this.statusText);
+};
+xhr.send();
 
-function asyncFunc() {
-    console.log("Started asyncFunc1");
-    setTimeout(() => {
-        console.log("Completed asyncFunc1");
-        console.log("Started asyncFunc2");
-          setTimeout(() => {
-            console.log("Completed asyncFunc2");
-            console.log("Started asyncFunc3");
-              setTimeout(() => {
-                console.log("Completed asyncFunc3");
-              }, 1000);
-          }, 2000);
-    }, 3000);
-}
+const xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+xhr.onload = function () {
+    console.log(this.response);
+};
+xhr.onerror = function () {
+    console.log(this.statusText);
+};
+xhr.send();
 
-asyncFunc();
+const xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+xhr.onload = function () {
+    console.log(this.response);
+};
+xhr.onerror = function () {
+    console.log(this.statusText);
+};
+xhr.send();
