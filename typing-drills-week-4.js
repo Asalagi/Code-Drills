@@ -59,44 +59,90 @@ xhr.onerror = function () {
 };
 xhr.send();
 
+// Day Five
+
+function asyncResolveFunc() {
+    function resolver(resolve, reject) {
+        resolve("Success");
+    }
+    return new Promise(resolver);
+}
+function asyncRejectFunc() {
+    function resolver(resolve, reject) {
+        reject("Failure");
+    }
+    return new Promise(resolver);
+}
+
+const promiseSuccess = asyncResolveFunc();
+const promiseFailure = asyncRejectFunc();
+
+promiseSuccess.then(
+    (successData) => {
+        console.log(successData);
+    },
+    (failureData) => {
+        console.log(failureData);
+    }
+);
+
+promiseFailure.then(
+    (successData) => {
+        console.log(successData);
+    },
+    (failureData) => {
+        console.log(failureData);
+    }
+);
+
 //
 
-const xhr = new XMLHttpResquest();
-xhr.open("GET", url);
-xhr.onload = function () {
-    console.log(this.response);
-};
-xhr.onerror = function () {
-    console.log(this.statusText);
-};
-xhr.send();
+function asyncResolveFunc() {
+    function resolver(resolve, reject) {
+        resolve("Success");
+    }
+    return new Promise(resolver);
+}
+function asyncRejectFunc() {
+    function resolver(resolve, reject) {
+        reject("Failure");
+    }
+    return new Promise(resolver);
+}
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", url);
-xhr.onload = function () {
-    console.log(this.response);
-};
-xhr.onerror = function () {
-    console.log(this.statusText);
-};
-xhr.send();
+const promiseSuccess = asyncResolveFunc();
+const promiseFailure = asyncRejectFunc();
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", url);
-xhr.onload = function () {
-    console.log(this.response);
-};
-xhr.onerror = function () {
-    console.log(this.statusText);
-};
-xhr.send();
+promiseSuccess.then(
+    (successData) => {
+        console.log(successData);
+    },
+    (failureData) => {
+        console.log(failureData);
+    }
+);
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", url);
-xhr.onload = function () {
-    console.log(this.response);
-};
-xhr.onerror = function () {
-    console.log(this.statusText);
-};
-xhr.send();
+function asyncResolveFunc() {
+    function resolver(resolve, reject) {
+        resolve("Success");
+    }
+    return new Promise(resolver);
+}
+function asyncRejectFunc() {
+    function resolver(resolve, reject) {
+        reject("Failure");
+    }
+    return new Promise(resolver);
+}
+
+const promiseSuccess = asyncResolveFunc();
+const promiseFailure = aynscRejectFunc();
+
+promiseSuccess.then(
+    (successData) => {
+        console.log(successData);
+    },
+    (failureDate) => {
+        console.log(failureData);
+    }
+);
