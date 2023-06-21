@@ -43,31 +43,81 @@ fetchData("http://reqbin.com/echo/get/json")
 })
 .catch((err) => console.log(err));
 
-//
+// Day Three
 
-function fetchData(url) {
-    return new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
-        xhr.onload = function () {
-            try {
-                if (this.status === 200) {
-                    resolve(this);
-                } else {
-                    reject(this);
-                }
-            } catch (e) {
-                reject(e);
-            }
-        };
-        xhr.onerror = function () {
-            reject(this);
-        };
+const response = fetch("http://reqbin.com/echo/get/json", {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+    },
+});
+
+response
+    .then((response) => {
+        const responseData = response.json();
+        responseData.then((data) => {
+            console.log(data);
+        });
+    })
+    .catch((err) => {
+        console.log(err);
     });
-}
 
-fetchData("https://reqbin.com/echo/get/json")
-.then((data) => {
-    console.log(data);
-})
-.catch((err) => console.log(err));
+    //
+
+    const response = fetch("http://reqbin.com/echo/get/json", {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+
+    response 
+        .then((response) => {
+            const responseData = response.json();
+            responseData.then((data) => {
+                console.log(data);
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+        
+    const response = fetch("http://reqbin.com/echo/get/json", {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+
+    response 
+        .then((response) => {
+            const responseData = response.json();
+            responseData.then((data) => {
+                console.log(data);
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+
+        const response = fetch("http://reqbin.com/echo/get/json", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+    
+        response 
+            .then((response) => {
+                const responseData = response.json();
+                responseData.then((data) => {
+                    console.log(data);
+                });
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    
