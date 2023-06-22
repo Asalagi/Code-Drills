@@ -63,61 +63,64 @@ response
         console.log(err);
     });
 
+    // Day Four
+
+    const controller = new AbortController();
+    var signal = controller.signal;
+    fetch(url, { signal })
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    controller.abort();
+
     //
 
-    const response = fetch("http://reqbin.com/echo/get/json", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json",
-        },
-    });
-
-    response 
+    const controller = new AbortController();
+    var signal = controller.signal;
+    fetch(url, { signal })
         .then((response) => {
-            const responseData = response.json();
-            responseData.then((data) => {
-                console.log(data);
-            });
+            console.log(response);
         })
         .catch((err) => {
             console.log(err);
-        });
+        })
+    controller.abort();
 
-        
-    const response = fetch("http://reqbin.com/echo/get/json", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json",
-        },
-    });
-
-    response 
+    const controller = new AbortController();
+    var signal = controller.signal;
+    fetch(url, { signal })
         .then((response) => {
-            const responseData = response.json();
-            responseData.then((data) => {
-                console.log(data);
-            });
+            console.log(response);
         })
         .catch((err) => {
             console.log(err);
-        });
+        })
+    controller.abort();
+
+    const controller = new AbortController();
+    var signal = controller.signal;
+    fetch(url, { signal })
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    controller.abort();
+
+    const controller = new AbortController();
+    var signal = controller.signal;
+    fetch(url, { signal })
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    controller.abort();
 
 
-        const response = fetch("http://reqbin.com/echo/get/json", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-    
-        response 
-            .then((response) => {
-                const responseData = response.json();
-                responseData.then((data) => {
-                    console.log(data);
-                });
-            })
-            .catch((err) => {
-                console.log(err);
-            });
     
