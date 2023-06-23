@@ -76,51 +76,70 @@ response
         })
     controller.abort();
 
-    //
+    // Day Five
 
-    const controller = new AbortController();
-    var signal = controller.signal;
-    fetch(url, { signal })
-        .then((response) => {
-            console.log(response);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    controller.abort();
+    async function asyncAwaitFunc() {
+        try {
+            console.log("Executre normally when invoked");
+            await promiseReturningFunc();
+            console.log("Continues the execution after promise resolution");
+        } catch (err) {
+            console.log("Error occured: " + err);
+        }
+    }
 
-    const controller = new AbortController();
-    var signal = controller.signal;
-    fetch(url, { signal })
-        .then((response) => {
-            console.log(response);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    controller.abort();
+//
 
-    const controller = new AbortController();
-    var signal = controller.signal;
-    fetch(url, { signal })
-        .then((response) => {
-            console.log(response);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    controller.abort();
-
-    const controller = new AbortController();
-    var signal = controller.signal;
-    fetch(url, { signal })
-        .then((response) => {
-            console.log(response);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    controller.abort();
+    async function asyncAwaitFunc() {
+        try {
+            console.log("Executes normally when invoked");
+            await promiseReturningFunc();
+            console.log("Continues the execution after promise resolution");
+        } catch (err) {
+            console.log("Error occured: " + err);
+        }
+    }
 
 
+    async function asyncAwaitFunc() {
+        try {
+            console.log("Executes normally when invoked");
+            await promiseReturningFunc();
+            console.log("Continues the execution after promise resolution");
+        } catch (err) {
+            console.log("Error occured: " + err);
+        }
+    }
     
+    
+    async function asyncAwaitFunc() {
+        try {
+            console.log("Executes normally when invoked");
+            await promiseReturningFunc();
+            console.log("Continues the exection after promise resolution");
+        } catch (err) {
+            console.log("Error occured: " + err);
+        }
+    }
+
+
+    async function asyncAwaitFunc() {
+        try {
+            console.log("Executes normally when invoked");
+            await promiseReturningFunc();
+            console.log("Continues the execution after promise resolution");
+        } catch (err) {
+            console.log("Error occured: " + err);
+        }
+    }
+
+
+    async function asyncAwaitFunc() {
+        try {
+            console.log("Executes normally when invoked");
+            await promiseReturningFunc();
+            console.log("Continues the execution after promise resolution");
+        } catch (err) {
+            console.log("Error occured: " + err);
+        }
+    }
