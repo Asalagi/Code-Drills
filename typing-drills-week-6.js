@@ -58,7 +58,7 @@ finalResolution
     })
     .catch((err) => {
         console.log(err);
-    });
+    })();
 
 
     const asyncArr = [async1, async2, async3];
@@ -75,7 +75,7 @@ finalResolution
     })
     .catch((err) => {
         console.log(err);
-    });
+    })();
 
 
     const asyncArr = [async1, async2, async3];
@@ -92,4 +92,4 @@ finalResolution
     })
     .catch((err) => {
         console.log(err);
-    });
+    })();
