@@ -40,55 +40,94 @@ it.next(3);
 const sum = it.next(5);
 sum.value;
 
+// Day Three
+
+function* gen1() {
+    yield 1;
+    yield* gen2();
+    yield 4;
+}
+function* gen2() {
+    yield 2;
+    yield 3;
+}
+
+for (let value of gen1()) {
+    console.log(value)
+}
+
 //
 
-function* generatorFunc(param) {
-    const num1 = yield;
-    const num2 = yield;
-    return num1 + num2;
+function* gen1() {
+    yield 1;
+    yield* gen2();
+    yield 4;
+}
+function* gen2() {
+    yield 2;
+    yield 3;
 }
 
-const it = generatorFunc();
-it.next();
-it.next(3);
-const sum = it.next(5);
-sum.value;
-
-
-function* generatorFunc(param) {
-    const num1 = yield;
-    const num2 = yield;
-    return num1 + num2;
+for (let value of gen1()) {
+    console.log(value)
 }
 
-const it = generatorFunc();
-it.next();
-it.next(3);
-const sum = it.next(5);
-sum.value;
 
-
-function* generatorFunc(param) {
-    const num1 = yield;
-    const num2 = yield;
-    return num1 + num2;
+function* gen1() {
+    yield 1;
+    yield* gen2();
+    yield 4;
+}
+function* gen2() {
+    yield 2;
+    yield 3;
 }
 
-const it = generatorFunc();
-it.next();
-it.next(3);
-const sum = it.next(5);
-sum.value;
-
-
-function* generatorFunc(param) {
-    const num1 = yield;
-    const num2 = yield;
-    return num1 + num2;
+for (let value of gen1()) {
+    console.log(value)
 }
 
-const it = generatorFunc();
-it.next();
-it.next(3);
-const sum = it.next(5);
-sum.value;
+
+function* gen1() {
+    yield 1;
+    yield* gen2();
+    yield 4;
+}
+function* gen2() {
+    yield 2;
+    yield 3;
+}
+
+for (let value of gen1()) {
+    console.log(value)
+}
+
+
+function* gen1() {
+    yield 1;
+    yield* gen2();
+    yield 4;
+}
+function* gen2() {
+    yield 2;
+    yield 3;
+}
+
+for (let value of gen1()) {
+    console.log(value)
+}
+
+
+function* gen1() {
+    yield 1;
+    yield* gen2();
+    yield 4;
+}
+function* gen2() {
+    yield 2;
+    yield 3;
+}
+
+for (let value of gen1()) {
+    console.log(value)
+}
