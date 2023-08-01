@@ -37,3 +37,5 @@ function isPalindrome(str){
 }
 
 console.log(isPalindrome("mom"));
+
+// STOPPED HERE STARTING ON SOMETHING ELSE
