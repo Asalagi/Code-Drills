@@ -32,3 +32,8 @@ function repeatStr (n, s) {
     let repeat = s.repeat(n)
     return repeat;
   }
+
+
+function removeChar(str){
+    return str.substring(1, str.length -1)
+};
