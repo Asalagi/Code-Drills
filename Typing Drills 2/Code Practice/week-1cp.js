@@ -45,3 +45,12 @@ function squareSum(numbers){
     }
     return sum;
 }
+
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        args.sort(function(a, b){return a - b});
+        return args[0];
+    }
+}
+ 
