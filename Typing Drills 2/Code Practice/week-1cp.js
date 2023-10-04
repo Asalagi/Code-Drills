@@ -37,3 +37,11 @@ function repeatStr (n, s) {
 function removeChar(str){
     return str.substring(1, str.length -1)
 };
+
+function squareSum(numbers){
+    let sum = 0;
+    for(let n = 0; n < numbers.length; n++) {
+        sum += Math.pow(numbers[n], 2)
+    }
+    return sum;
+}
