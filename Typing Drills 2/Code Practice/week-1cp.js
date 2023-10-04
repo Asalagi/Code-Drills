@@ -15,3 +15,15 @@ function cookingTime(eggs) {
     let eggMax = 8; // 8 is the number of max eggs that can but boiled
     return ; // head getting to mathy I don't know how to display what it wants
 }
+
+// WEEK ONE DAY TWO
+
+function positiveSum(arr) {
+    let sum = 0; // no negative numbers, make them 0
+    for(let n = 0; n < arr.length; n++) {
+        if(arr[n] > 0) {
+            sum += arr[n]
+        }
+    }
+    return sum;
+}
