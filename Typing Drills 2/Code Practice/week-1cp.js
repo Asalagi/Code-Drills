@@ -66,3 +66,19 @@ var summation = function (num) {
   function noSpace(x){
     return x.replaceAll(' ', '');
   }
+
+
+  function greet () {
+    let message = 'hello world!';
+    return message;
+  }
+
+
+  function countSheeps(sheep) {
+    return sheep.filter(Booleen).length;
+  }
+
+  const stringToNumber = function(str){
+    let num = Number(str);
+    return num;
+  }
