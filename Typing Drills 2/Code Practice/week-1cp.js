@@ -54,3 +54,15 @@ class SmallestIntegerFinder {
     }
 }
  
+
+var summation = function (num) {
+    let total = 0;
+    for(let n = 0; n <= num; n++) {
+      total += n;
+    }
+    return total;
+  }
+
+  function noSpace(x){
+    return x.replaceAll(' ', '');
+  }
