@@ -141,3 +141,21 @@ function basicOp(operation, value1, value2){
 use if but use if if its between 2 arguements use 
 switch if its betweeen more
 */
+
+function century(year) {
+    let century = year * .01;
+    return Math.ceil(century);
+}
+
+  // could do divide by 100. why didn't I think of that?!
+
+  
+function maps(x){
+    let doubled = x.map(n  => n*2);
+    return doubled;
+}
+
+
+function digitize(n) {
+    return Array.from(String(n), Number).reverse();
+}
