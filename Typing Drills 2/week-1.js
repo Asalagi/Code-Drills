@@ -47,3 +47,43 @@ Number(str); // 12
 parseInt(str); // 12
 
 
+// WEEK ONE - DAY TWO 10/05/2023
+
+const bigNum1 = 1526688934595n,
+    bigNum2 = 256489246848n,
+    num3 = 1562365;
+
+const bigSum = bigNum1 + bigNum2;
+const bigDiff = bigNum1 + bigNum2;
+const total = bigNum1 + bigNum2 + BigInt(num3);
+
+
+const num1 = 10,
+    num2 = 20;
+
+true || false; // true 
+false || false; // false
+false || num1; // 10
+0 || num2; // 20
+"text" || true; // "text"
+num1 > 0 || num2 < 0; // true
+
+const num1 = 10,
+    num2 = 20;
+
+true && true; // true
+true && false; //false
+true && num1; // 10
+num1 && num2; // 20
+"text" && num1 + num2; // 30
+num1 > 0 && num2 < 0; //false
+
+undefined ?? 10; // 10
+null ?? 20; // 20
+false ?? num1; // false
+0 ?? num2; //0
+
+!!10; // true
+!!{}; // true
+!!"" // false
+!!0; // false
