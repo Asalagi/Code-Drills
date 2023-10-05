@@ -82,3 +82,62 @@ var summation = function (num) {
     let num = Number(str);
     return num;
   }
+
+
+  // WEEK ONE DAY THREE
+
+  function doubleInteger(i) {
+    return i * 2;
+  }
+
+
+  function litres(time) {
+    let nathanDrinks = .5;
+    let hour = time;
+    return Math.floor(hour * nathanDrinks);
+  }
+
+  /*   function litres(time) {
+    let nathanDrinks = .5;
+    return Math.floor(time * nathanDrinks);
+  }
+  simplified it */
+  
+  function booleanToString(b){
+    if (b === true) {
+      return "true";
+    } else {
+      return "false";
+    }
+  }
+
+  // best practice listed - return b.string();
+
+  function greet(name){
+    return `Hello, ${name} how are you doing today?`;
+  }
+
+
+function basicOp(operation, value1, value2){
+    switch (operation) {
+        case "+":
+            total = value1 + value2;
+            break;
+        case "-":
+            total = value1 - value2;
+            break;
+        case "*":
+            total = value1 * value2;
+            break;
+        case "/":
+            total = value1 / value2;
+            break;
+        default:
+    }
+    return total;
+}
+
+/* had a little trouble with this one, wanted to 
+use if but use if if its between 2 arguements use 
+switch if its betweeen more
+*/
