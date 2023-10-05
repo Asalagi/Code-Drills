@@ -159,3 +159,17 @@ function maps(x){
 function digitize(n) {
     return Array.from(String(n), Number).reverse();
 }
+
+function past(h, m, s){
+    let hour = h * 60 * 60 * 1000;
+    let minute = m * 60 * 1000;
+    let second = s * 1000;
+    let total = hour + minute + second;
+    return total;
+  }
+
+  function abbrevName(name){
+    let nameArray = name.split(' ');
+    let initials = nameArray[0][0] + '.' + nameArray[1][0];
+    return initials.toUpperCase();
+  } 
