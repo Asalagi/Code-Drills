@@ -47,7 +47,7 @@ Number(str); // 12
 parseInt(str); // 12
 
 
-// WEEK ONE - DAY TWO 10/05/2023
+// WEEK ONE - DAY TWO - 10/05/2023
 
 const bigNum1 = 1526688934595n,
     bigNum2 = 256489246848n,
@@ -87,3 +87,40 @@ false ?? num1; // false
 !!{}; // true
 !!"" // false
 !!0; // false
+
+// WEEK ONE DAY THREE - 10-06-2023
+Number.isInteger(1.5); // false
+Number.isInteger(-15); // true
+
+Number.parseInt("5.8"); // 5
+Number.parseInt("123x"); // 123
+
+Number.parseFloat("5.86"); // 5.86
+Number.parseFloat("-12.69x"); // -12.69
+
+Number.isNaN(Nan); // true
+Number.isNaN("text" - 10); // true
+Number.isNaN("text"); // false
+
+(56.369).toFixed(20); // 56.37
+(59).toFixed(3); // 59.000
+
+(32.458).toPrecision("3"); // 32.5
+(98.1).toPrecision(1); // 1e+2
+
+
+Number.isNaN =
+    Number.isNaN ||
+    function isNaN(input) {
+        return typeof input === "number" && input !== input;
+    };
+
+    Math.abs(-5)); // 5
+    Math.floor(1.6)); // 1
+    Math.ceil(2.4)); // 3
+    Math.round(3.8)); // 4
+    Math.max(-4, 5, 6)); //6
+    Math.min(-7, -2, 3)); // -7
+    Math.sqrt(64)); // 8
+    Math.pow(5, 3)); // 125
+    Math.trunc(-6.3)); // -6
