@@ -212,3 +212,30 @@ function makeUpperCase(str) {
     let position = haystack.indexOf('needle');
     return haystack.includes('needle') ? `found the needle at position ${position}` : 'no needle found';
 }
+// could have just used index of and not includes as well
+
+function sum (numbers) {
+    let sumNum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+      sumNum += numbers[i];
+    }
+    return sumNum;
+  };
+
+  // could have done numbers.reduce((a, b) => a+b, 0) - listed under best practice remember that for the future
+
+  function invert(array) {
+    return array.map(n => n * -1);
+  }
+
+//   function findAverage(array) {
+//     let sum = array.reduce((a, b) => a + b, 0); // add contents of array
+//     let length = array.length; // take array and divi it up equally
+//     let average = sum / length; // return average 
+//     return average;
+//   }
+// minimized problem 
+
+function findAverage(array) {
+    return array.reduce((a, b) => a + b, 0) / array.length || 0;
+  }
