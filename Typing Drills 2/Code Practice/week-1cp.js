@@ -173,3 +173,42 @@ function past(h, m, s){
     let initials = nameArray[0][0] + '.' + nameArray[1][0];
     return initials.toUpperCase();
   } 
+
+  // WEEK ONE DAY FOUR
+
+  function paperwork(n, m) {
+    if (n < 0 || m < 0) {
+        return 0;
+    } else {
+        return n * m;
+    }
+}
+
+
+function lovefunc(flower1, flower2){
+    if (flower1 % 2 !== flower2 % 2) {
+        return true;
+    } else {
+        return false;
+    }
+  }
+
+  function simpleMultiplication(number) {
+    if (number % 2 === 0) {
+      return number * 8;
+    } else {
+      return number * 9;
+    }
+}
+
+// best practice listed to use ternary (?)
+// example condition ? exprIfTrue : exprIfFalse
+
+function makeUpperCase(str) {
+    return str.toUpperCase();
+  }
+
+  function findNeedle(haystack) {
+    let position = haystack.indexOf('needle');
+    return haystack.includes('needle') ? `found the needle at position ${position}` : 'no needle found';
+}
