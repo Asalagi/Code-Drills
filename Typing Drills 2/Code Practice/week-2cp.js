@@ -19,3 +19,30 @@ function setAlarm(employed, vacation){
 function reverseWords(str){
     return str.split(' ').reverse().join(' ');
   };
+
+
+function sumMix(x){
+    let mixSum = 0;
+    for (let n = 0; n < x.length; n++){
+        let nums = x[n];
+        mixSum += +nums;
+    }
+    return mixSum;
+}
+
+// best practice listed return x.map(a => +a).reduce((a, b) => a + b);
+
+function getAverage(marks){
+    let sum = marks.reduce((a, b) => a +b, 0);
+    return Math.floor(sum / marks.length);
+}
+
+// ad mark numbers
+// average marsk
+// round down
+
+// best practice return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
