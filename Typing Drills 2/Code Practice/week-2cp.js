@@ -46,3 +46,12 @@ function getAverage(marks){
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+
+function sumArray(array) {
+    if (array && array.length > 1) {
+        let lowHigh = array.sort((a, b) => a -b).slice(1, -1);
+        return lowHigh.reduce((a,b) => a + b, 0);
+    } else {
+        return 0;
+    }};
