@@ -136,3 +136,29 @@ function checkForFactor (base, factor) {
         return false;
     }
 }
+
+
+function square(n) {
+    return n * n;
+}
+
+
+function twiceAsOld(dadYO, sonYO) {
+    return Math.abs((dadYO - (sonYO * 2)));
+}
+// dadYO - (sonYO * 2)
+// 36 - 7 * 2 = 14 = 22
+
+
+function hoopCount (n) {
+    return n >= 10 ? 'Great, now move on to tricks' : "Keep at it until you get it";
+}
+
+
+function removeEveryOther(arr){
+    let words = [];
+    for (let w = 0; w < arr.length; w+=2) {
+        words.push(arr[w]);
+    }
+    return words;
+}
