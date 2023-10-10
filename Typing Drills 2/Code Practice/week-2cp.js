@@ -54,4 +54,22 @@ function sumArray(array) {
         return lowHigh.reduce((a,b) => a + b, 0);
     } else {
         return 0;
-    }};
+}};
+
+
+// WEEK TWO DAY TWO - 10/10/2023
+
+function doubleChar(str) {
+    let letters =  str.split('');
+    return letters.map(l => l.repeat(2)).join('');
+  }
+  
+  // could have done str.split.map.join
+
+  
+  function arrayPlusArray(arr1, arr2) {
+    return arr1.concat(arr2).reduce((a, b) => a +b);
+  }
+
+  
+
