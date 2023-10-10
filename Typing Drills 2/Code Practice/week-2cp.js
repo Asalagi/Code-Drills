@@ -93,3 +93,46 @@ function getAge(inputString){
 }
 
 
+function cockroachSpeed(s) {
+    return Math.floor(s * 100000 / 3600);
+}
+
+// km/hr to cm/se
+// 1km = 100,000 cm
+// 1hr = 3600 sec
+
+
+function switchItUp(number){ 
+    switch (number) {
+        case 0: return 'Zero';
+        break;
+        case 1: return 'One';
+        break;
+        case 2: return 'Two';
+        break;
+        case 3: return 'Three';
+        break;
+        case 4: return 'Four';
+        break;
+        case 5: return 'Five';
+        break;
+        case 6: return 'Six';
+        break;
+        case 7: return 'Seven';
+        break;
+        case 8: return 'Eight';
+        break;
+        case 9: return 'Nine';
+        break;
+        default:
+    }
+}
+
+
+function checkForFactor (base, factor) {
+    if (base % factor === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
