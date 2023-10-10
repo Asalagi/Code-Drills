@@ -35,3 +35,45 @@ function myTag(strings, person, membership) {
 }
 
 myTag`Note: ${person} is a member of following communities ${membership}`;
+
+
+// WEEK TWO DAY TWO - 10/10/2023
+
+try {
+    callAPI();
+} catch (error) {
+    throw new Error(error);
+} finally {
+    console.log("I will execute no matter what happened in the try or catch");
+}
+
+
+let symID = Symbol("id");
+
+let symUsername = Symbol.for("username");
+
+Symbol.keyFor(symUsername);
+
+
+function higherOrderFunction() {
+    function displayHello() {
+        console.log("Hello");
+    }
+    return displayHello;
+}
+
+var func = higherOrderFunction();
+func();
+
+
+function callbackExecutor(callback) {
+    if (typeof callback === "function") {
+        callback();
+    }
+}
+
+function callbackFunc() {
+    console.log("Callback function executed");
+}
+
+callbackExecutor(callbackFunc);
