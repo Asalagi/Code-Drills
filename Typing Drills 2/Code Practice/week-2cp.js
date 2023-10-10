@@ -71,5 +71,25 @@ function doubleChar(str) {
     return arr1.concat(arr2).reduce((a, b) => a +b);
   }
 
-  
+
+
+function feast(beast, dish) {
+    if (beast.charAt(0) === dish.charAt(0) && beast.charAt(beast.length - 1) === dish.charAt(dish.length -1)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// find first and last character of a string
+// compare first and last character of beast to  dish
+// pass true or false
+
+// could have simplified with beast[0] instead of charAt
+
+
+function getAge(inputString){
+    return parseInt(inputString);
+}
+
 
