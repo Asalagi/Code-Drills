@@ -162,3 +162,59 @@ function removeEveryOther(arr){
     }
     return words;
 }
+
+// WEEK TWO DAY THREE - 10/11/2023
+
+function getPlanetName(id){
+    var name;
+    switch(id){
+      case 1:
+        name = 'Mercury';
+        break;
+      case 2:
+        name = 'Venus';
+        break;
+      case 3:
+        name = 'Earth';
+        break;
+      case 4:
+        name = 'Mars';
+        break;
+      case 5:
+        name = 'Jupiter';
+        break;
+      case 6:
+        name = 'Saturn';
+        break;
+      case 7:
+        name = 'Uranus';
+        break;
+      case 8:
+        name = 'Neptune';
+        break;
+        default: 'Not a planet';
+    }
+    
+    return name;
+  }
+
+
+function monkeyCount(n) {
+    let monkeys = [];
+    for (let i = 1; i <= n; i++) {
+        monkeys.push(i)
+    }
+    return monkeys;
+}
+
+
+function enough(cap, on, wait) {
+    if (wait - (cap - on) > 0) {
+        return wait - (cap - on)
+    } else {
+        return 0;
+    }
+}
+
+// best practice math.max(wait + on - cap, 0)
+
