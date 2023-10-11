@@ -77,3 +77,53 @@ function callbackFunc() {
 }
 
 callbackExecutor(callbackFunc);
+
+// WEEK TWO DAY THREE - 10/11/2023
+
+function func() {
+    for (let key in arguments) {
+        console.log(arguments[key]);
+    }
+}
+
+func (1, "Hello", true);
+
+
+function func() {
+    for (let valuye of arguments) {
+        console.log(value);
+    }
+}
+
+func(1, "Hello", true);
+
+
+function func(a, b, c) {
+    if (func.length === arguments.length) {
+        console.log("Number of arguments passed match the expected arguments");
+    } else {
+        throw new Error("Number of arguments passed do not match the expected arguments");
+    }
+}
+
+function varArgsFunc(...params) {
+    params.forEach(function (value, index) {
+        console.log(index, ":", value);
+    });
+}
+
+varArgsFunc("Hello", ",", "World", "!!!");
+
+function functionName(params) {
+    // code block
+};
+
+const fuinctionName = function(params) {
+    // code block
+};
+
+const arrowFunctionName = (params) => {
+    // code block
+};
+
+
