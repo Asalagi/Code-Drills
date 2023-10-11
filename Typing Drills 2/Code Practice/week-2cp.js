@@ -218,3 +218,21 @@ function enough(cap, on, wait) {
 
 // best practice math.max(wait + on - cap, 0)
 
+
+function firstNonConsecutive (arr) {
+    for(let n = 0; n < arr.length - 1; n++) {
+        if(arr[n]+1 !== arr[n+1]) {
+            return arr[n+1]
+        } 
+    }
+  return null;
+}
+// ^^ struggled with this one, had to look up
+// loop through check if n + 1 also equals to n - 1 if not null if yes move on
+
+function sayHello(name) {
+    return `Hello, ${name}`;
+}
+
+
+
