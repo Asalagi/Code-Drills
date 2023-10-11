@@ -234,5 +234,14 @@ function sayHello(name) {
     return `Hello, ${name}`;
 }
 
+function move (position, roll) {
+    return roll * 2 + position;
+}
 
 
+function strCount(str, letter){  
+    let word = str.split("");
+    return word.filter(w => w === letter).length;
+  }
+
+// could have done str.split(letter).length-1
