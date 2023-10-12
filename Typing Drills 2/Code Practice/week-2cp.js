@@ -245,3 +245,65 @@ function strCount(str, letter){
   }
 
 // could have done str.split(letter).length-1
+
+// WEEK TWO DAY FOUR - 10/12/2023
+
+function bonusTime(salary, bonus) {
+    if (bonus === true) {
+        return `£${salary * 10}`;
+    } else {
+        return `£${salary}`;
+    }
+  }
+
+  //^ could have compacted to bonus ? true conditions : false conditions
+
+function testEven(n) {
+    return n % 2 === 0 ? true : false;
+}
+
+
+function between(a, b) {
+    let missing = [];
+    for(let i = a; i <= b; i++) {
+        missing.push(i)
+    }
+    return missing;
+  }
+
+
+  var humanYearsCatYearsDogYears = function(humanYears) {
+    let cat = 0;
+    let dog = 0;
+    for(let y = 1; y <= humanYears; y++){
+        if (y === 1) {
+            cat += 15;
+            dog += 15;
+        } else if (y === 2){
+            cat += 9;
+            dog += 9;
+        } else {
+            cat += 4;
+            dog += 5;
+        }
+    }
+    return [humanYears, cat, dog];
+  }
+
+  // 1 human yr = 15 cat AND dog yr
+  // 2 human yr = 15 PLUS 9 cat AND dog yr
+  // 3+ human yr = 24 PLUS cat yr (4) dg yr (5)
+
+  //^ struggled, had concept of if else, else if statement but unsure on the exact of everything
+
+
+  String.prototype.isUpperCase = function() {
+    if (this.toString() === this.toUpperCase()) {
+        return true;
+    } else {
+        return false;
+    }
+  }
+
+  //^ sturggled! had to look up. read some on prototype. it needed 'this'.
+// could have done return this.toUpperCase() === this.toString() to simplify
