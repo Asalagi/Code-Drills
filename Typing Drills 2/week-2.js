@@ -127,3 +127,61 @@ const arrowFunctionName = (params) => {
 };
 
 
+// WEEK TWO DAY FOUR - 10/12/2023
+
+const noArgsFunc = () => {
+    return "No args passed";
+};
+
+const singleArgFunc = (arg1) => "Argument is " + arg1;
+
+const singleArgFunc = (arg1) => {
+    console.log("Argument is " + arg1);
+    return arg1;
+};
+
+const twoArgsFunc = (arg1, arg2) => {
+    return arg1 + arg2;
+};
+
+const threeArgsFunc = (arg1, arg2, arg3) => {
+    console.log("Sum is " + (arg1 + arge2 + arge3));
+    return true;
+};
+
+
+num1 = 10;
+printHello();
+
+var num1;
+function printHello() {
+    console.log("Hello");
+}
+
+var nonHoistedFunc = function () {
+    console.log("Hello");
+};
+
+
+(function IIFE() {
+    console.log("I am an Immediately invoked function");
+})();
+
++(function IIFE() {
+    console.log("I am an Immediately invoked function");
+})();
+
+
+(function IIFE(param1, param2) {
+    console.log("I am am Immediately invoked function");
+    console.log("Paramter 1: " + param1);
+    console.log("Paramter 2: " + typeof param2);
+    console.log("Parameter 2 output: " + param2());
+})("hello", function () {
+    return "I am a string from a function passed to IIFE";
+});
+
+
+var randomNumber = (function () {
+    return Math.floor(Math.random() * 100);
+})();
