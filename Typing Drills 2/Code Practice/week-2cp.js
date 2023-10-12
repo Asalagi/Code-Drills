@@ -307,3 +307,36 @@ function between(a, b) {
 
   //^ sturggled! had to look up. read some on prototype. it needed 'this'.
 // could have done return this.toUpperCase() === this.toString() to simplify
+
+function howManyLightsabersDoYouOwn(name) {
+    return name === "Zach" ? 18 : 0;
+  }
+
+
+function nameShuffler(str){
+    return str.split(' ').reverse().join(' ');
+}
+
+
+function stringy(size) {
+    let str = '';
+    for(let s = 1; s <= size; s++){
+        str += s % 2;
+    }
+    return str;
+  }
+
+
+  function xor(a, b) {
+    if(a === b) {
+        return false;
+    } else {
+        return true;
+    }
+  }
+
+  // xor evalutes two booleans.
+  // returns true if one is true and one is false
+  // return true if both are true or both are false
+//^ could have simplified but it worked
+
