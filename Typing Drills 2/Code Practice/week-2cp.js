@@ -340,3 +340,41 @@ function stringy(size) {
   // return true if both are true or both are false
 //^ could have simplified but it worked
 
+
+// WEEK TWO DAY FIVE - 10/13/2023
+
+function plural(n) {
+    return n !== 1 ? true : false;
+}
+  // could have just done n !== 1;
+
+
+function helloWorld () {
+    let str = 'Hello World!';
+    console.log(str);
+}
+
+
+function saleHotdogs(n){
+    return n < 5 ? 100 * n : n >= 5 && n < 10 ? 95 * n : 90 * n;
+}
+// could simplify and do n*(n < 5 ? 100 : n >= 5 && n < 10 ? 95 : 90 )
+
+
+function addFive(num) {
+    var total = num + 5
+    return total;
+}
+// fixer function, code original was returning num instead of total
+// could have simplified and just return num * 5
+
+
+function pipeFix(numbers){
+    let pipes = []
+    for(let n = numbers[0]; n <= numbers[numbers.length-1]; n++){
+      pipes.push(n);
+    }
+    return pipes;
+  }
+// struggled a little, [numbers.length - 1] kind of messes me up.
+
