@@ -378,3 +378,17 @@ function pipeFix(numbers){
   }
 // struggled a little, [numbers.length - 1] kind of messes me up.
 
+function multiTable(number) {
+    let results = '';
+    for (let n = 1; n <= 10; n++){
+      results +=  n + ' * ' + number + ' = ' + (n * number) + '\n';
+    }
+  
+    results = results.trimEnd().trimEnd();
+  
+    return results;
+  }
+
+  // loop through each number and * by (number)
+  // display each multipled number in a string with num * num = numnum * num
+// needed help. Thanks, just trim end
