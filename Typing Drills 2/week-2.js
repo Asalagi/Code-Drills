@@ -185,3 +185,92 @@ var nonHoistedFunc = function () {
 var randomNumber = (function () {
     return Math.floor(Math.random() * 100);
 })();
+
+// WEEK TWO DAY FIVE - 10/13/2023
+
+function multipleValueReturnFunc() {
+    const a = 5,
+        b = 10;
+    return [a,b];
+}
+
+const [x, y] = multipleValueReturnFunc();
+
+
+function multipleValueReturnFunc() {
+    const a = "Java",
+        b ="Script";
+    return {
+        a,
+        b,
+    };
+}
+
+const { a: x, b: y } = multipleValueReturnFunc();
+const {a, b } = multipleValueReturnFunc();
+
+
+function* multipleValueReturnFunc() {
+    const a = 5,
+        b = 10;
+    yield a;
+    yield b;
+}
+
+const iterator = multipleValueReturnFunc();
+const x = iterator.next().value;
+const y = iterator.next().value;
+
+function defaultValueFunc(
+    num = 10,
+    num2 = 20,
+    bool = false,
+    sum = num + num2,
+    string = 'Hello';
+){
+    console.log(num, string, bool, sum);
+}
+
+defaultValueFunc();
+defaultValueFunc(4, 8);
+defaultValueFunc(10, 4, true);
+defaultValueFunc(5, 6, false, 11);
+defaultValueFunc(undefined, undefined, false);
+
+
+function displayThisValue(param1, param2) {
+    console.log(this.value, param1, param2);
+}
+
+const obj = {
+    value: 10,
+};
+const valueArr = [20,30];
+
+displayThisValue(20, 30);
+
+displayThisValue.call(obj, ...valueArr);
+
+displayThisValue.apply(obj, valueArr);
+
+setTimeout(displayThisValue, 1000, ...valueArr);
+
+setTimeout(displayThisValue.bind(obj), 1000, ...valueArr);
+setTimeout(displayThisValue.bind(obi, ...valueArr), 1000);
+
+
+function Employee(id) {
+    this.id = id;
+}
+
+Employee.prototype.setSalary = function (salary) {
+    this.salary = salary;
+};
+
+Employee.prototype.getSalary = function () {
+    return this.salary;
+};
+
+const emp = new Employee(1);
+emp.setSalary(10000);
+console.log(emp.getSalary());
