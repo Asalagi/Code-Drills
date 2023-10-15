@@ -392,3 +392,42 @@ function multiTable(number) {
   // loop through each number and * by (number)
   // display each multipled number in a string with num * num = numnum * num
 // needed help. Thanks, just trim end
+
+// ADDING SOME EXTRA PRACTICE
+
+function getCount(str) {
+    let vowels = str.match(/[aeiou]/gi);
+    return vowels === null ? 0 : vowels.length;
+  }
+
+  // origial tried to overthinkg and use a for loop with if statement.
+  // match was much easier.
+  // origially did vowels === 0 but if no vowel was found it wa null so changed 0 to null
+
+  function disemvowel(str) {
+    return str.replaceAll(/[aeiou]/gi, '');
+  }
+
+  //take out the vowels, learning to branch out think and use other things that I have not used before
+
+  function squareDigits(num){
+    let numString = num.toString().split('')
+    let squared = numString.map((num) => Math.pow(num, 2));
+    return Number(squared.join(''));
+  }
+
+  // took alot of time and looking up how to get the string back to integer
+  // could have simplified to +num.toString().split('').map(i => i*i).join('');
+
+  function highAndLow(numbers){
+    let nums = numbers.split(' ');
+    return `${Math.max(...nums)} ${Math.min(...nums)}`
+  }
+
+  // needed help with this, forgot I coudl use a Math.max and min
+
+  var isSquare = function(n){
+    return Math.sqrt(n) % 1 === 0 ? true : false;
+  }
+
+  // reviewed and did a little refresher with modulus
