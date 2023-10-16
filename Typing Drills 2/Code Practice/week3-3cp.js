@@ -31,4 +31,13 @@ function isIsogram(str){
 
   // had to look up regex
 
-  
+function XO(str) {
+    let charX = str.match(/x/gi);
+    let charO = str.match(/o/gi);
+    let results = (charX && charX.length) === (charO && charO.length);
+   return results ? true : false;
+}
+
+/* was so so so close, did all on my own but forgot the charX a
+nd charO before the char.length.
+*/
