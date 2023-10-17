@@ -41,3 +41,19 @@ function XO(str) {
 /* was so so so close, did all on my own but forgot the charX a
 nd charO before the char.length.
 */
+
+String.prototype.toJadenCase = function () {
+    const sSplit = this.split(' ');
+    for (let w = 0; w < sSplit.length; w++) {
+        sSplit[w] = sSplit[w].charAt(0).toUpperCase() + sSplit[w].slice(1);
+    }
+    return sSplit.join(' ');
+  };
+
+  // neede to look up prototype
+// takes a string splits the string
+/* runs the array (becasue the string is split and turns to an array of words)
+   throuh a for loop, looks for the first character(position 0)
+   changes it to uppercase and adds the rest of the word from position 1 and on
+*/
+// then join string back together and return it.
