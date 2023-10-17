@@ -57,3 +57,19 @@ String.prototype.toJadenCase = function () {
    changes it to uppercase and adds the rest of the word from position 1 and on
 */
 // then join string back together and return it.
+// couild have also mapped split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ')
+
+function findShort(s){
+    return Math.min(...s.split(' ').map(s => s.length));
+  }
+
+// looked up and learned about spread and using it with Math methods
+
+function accum(s) {
+    return [...s].map((char, index) => (char.toUpperCase() + char.toLowerCase().repeat(index))).join('-');
+  }
+
+  //could have also done s.split('')
+  // had to look up struggled with how to get it to repeat, had no idea you could use index for that
+
+  
