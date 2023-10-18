@@ -72,6 +72,8 @@ function accum(s) {
   //could have also done s.split('')
   // had to look up struggled with how to get it to repeat, had no idea you could use index for that
 
+// WEEK THREE DAY THREE - 10/18/2023
+
   function DNAStrand(dna){
     let results = '';
     for (let d = 0; d < dna.length; d++){
@@ -105,3 +107,41 @@ function sumTwoSmallestNumbers(numbers) {
 }
 
 // nice job Allie! You did this all on your own! Didn't look anthing up!
+
+function getSum(a, b){
+    if (a === b) {
+      return a;
+    } else {
+      return a + b;
+    }
+}
+/* ^ passed first tested then err on second, miss understood what was wanted.
+ - Incorrect answer for a=5, b=-1: expected 4 to equal 14
+ - Incorrect answer for a=-100, b=-470: expected -570 to equal -105735
+*/
+
+function getSum(a, b){
+    let min = a < b ? a : b;
+    let max = a < b ? b : a;
+    
+    let sum = 0;
+    for(let n = min; n <= max; n++){
+      sum += n;
+    }
+    return sum;
+}
+
+// finishng code to loop through and keep adding from min to max
+
+function solution(str, ending){
+   return str.endsWith(ending);
+}
+
+// another awesome try!!!
+
+function maskify(cc) {
+    let lastDigits = cc.substr(-4);
+    return lastDigits.padStart(cc.length, "#");
+}
+
+// started out great, was on the right track, over thought and got off course.
