@@ -96,4 +96,12 @@ function accum(s) {
 find a lesser way with replace all, and matching and went along that line of
 thinkging I fell into trying to make it as compact as possinle instead of 
 going with my original way of working it.
+*/
 
+
+function sumTwoSmallestNumbers(numbers) {  
+    let lowest = numbers.sort((a, b) => a - b);
+    return lowest[0] + lowest[1];
+}
+
+// nice job Allie! You did this all on your own! Didn't look anthing up!
