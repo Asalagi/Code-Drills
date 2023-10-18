@@ -161,3 +161,14 @@ function isTriangle(a,b,c){
  // two long sides one short side
 // so a & b must be longer than c, or c & c must but longer than a and so on.
 
+function addBinary(a,b) {
+    return  (a+b).toString(2);
+ }
+
+ // I don't understand binary numbers I see it 1s and 0s but don't understand which is what
+
+ function validatePIN (pin) {
+    return /^(\d{4}|\d{6})$/.test(pin);
+  }
+
+  
