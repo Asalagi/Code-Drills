@@ -72,4 +72,28 @@ function accum(s) {
   //could have also done s.split('')
   // had to look up struggled with how to get it to repeat, had no idea you could use index for that
 
-  
+  function DNAStrand(dna){
+    let results = '';
+    for (let d = 0; d < dna.length; d++){
+        if (dna[d] === 'A') {
+            results += 'T';
+          } else if (dna[d] === 'T'){
+            results += 'A';
+            } else if (dna[d] === 'C') {
+                results += 'G';
+              } else if (dna[d] === 'G') {
+                  results += 'C';
+              }
+    }
+    return results;
+}
+
+// A to T
+// T to A
+// G to C
+// C to G
+/* really struggled started with a for loop and if statement and tried to 
+find a lesser way with replace all, and matching and went along that line of
+thinkging I fell into trying to make it as compact as possinle instead of 
+going with my original way of working it.
+
