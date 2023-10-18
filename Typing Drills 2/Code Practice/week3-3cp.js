@@ -145,3 +145,19 @@ function maskify(cc) {
 }
 
 // started out great, was on the right track, over thought and got off course.
+
+function friend(friends){
+    return friends.filter(word => word.length === 4);
+}
+
+function isTriangle(a,b,c){
+    if (a + b <= c || b + c <= a || a + c <= b) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+ // two long sides one short side
+// so a & b must be longer than c, or c & c must but longer than a and so on.
+
