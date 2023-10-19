@@ -232,3 +232,30 @@ function openOrSenior(data){
 
   //  if 55 yrs+ && > 7 handicap == senior
   // everything else open
+
+  function printerError(s) {
+    return `${s.match(/[^a-m]/g)?.length || 0}/${s.length}`;
+  }
+
+  // could have done a for loop. needed help with the ? in the .length section
+
+const binaryArrayToNumber = arr => {
+    return parseInt(arr.join(''), 2); 
+};
+
+// had to look up. I suck with binary numbers I jsut don't get it
+
+
+var number = function(busStops){
+    let offPeople = busStops.map(([on, off]) => on - off, 0);
+    let peoples = offPeople.reduce((total, value) => total + value);
+  return peoples;
+}
+
+var number = function(busStops){
+    return busStops.map(([on, off]) => on - off, 0).reduce((total, value) => total + value);
+}
+
+/* OMG!!! I DID IT ALL ON MY OWN! Might be length and not best practice but I DID IT!
+best practice listed -> busStops.reduce((rem, [on, off]) => rem + on - off, 0)
+*/
