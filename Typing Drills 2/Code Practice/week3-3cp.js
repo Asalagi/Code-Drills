@@ -171,4 +171,50 @@ function addBinary(a,b) {
     return /^(\d{4}|\d{6})$/.test(pin);
   }
 
-  
+//WEEK THREE DAY FOUR - 10/19/2023
+
+  function longest(s1, s2) {
+    let str = (s1 + s2).split('');
+    let unique = str.filter((element, index) => {
+        return str.indexOf(element) === index;
+    });
+    return unique.sort().join('');
+  }
+
+/* struggled with this one, got all the way to sorting them alphebetically
+but then couldn't figure out what to get them to get rid of the duplicates
+I looked stuff up through google, found thw way above, it worked. 
+After submission found I could have used new set and that would have taken
+the duplicates out.
+*/
+  function longest(s1, s2) {
+    return [...new Set(s1+s2)].sort().join('');
+  }
+
+
+function rowSumOddNumbers(n) {
+   return Math.pow(n, 3);
+}
+
+// needed help, read it needed to be x3 came up with Maht.pow
+
+
+function nbYear(p0, percent, aug, p) {
+    let years = 0;
+      for (years = 0; p0 < p; years++) {
+        p0 += Math.floor(p0 * (percent / 100) + aug);
+      }
+      return years;
+    }
+
+/* ^ orignal code above help was needed to refine but I was on the right track
+with the for loop. 
+passed all test but one, ugh.
+OMG! This was tortured, after nearly 45 minutes looking up difference solutions
+all were through error like mine I decided to try adding Math.floor
+I add that stupid math method all over, finally tried Math.floor(p0 + p0....)
+nope failed, rewrote the code to make sure i had everyhting in it place, still no.
+finally gave up and looked at solution and all I needed to do was 
+MOVE THE CODE TO THE SECOND P0. I feel like an idiot!
+*/
+
