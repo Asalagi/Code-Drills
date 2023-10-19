@@ -225,3 +225,10 @@ function findNextSquare(sq) {
   }
 
 // did all on my own! Super proud considering how the last Kata went.
+
+function openOrSenior(data){
+    return data.map(([age, handicap]) => (age >= 55 && handicap > 7) ? 'Senior' : 'Open');
+  }
+
+  //  if 55 yrs+ && > 7 handicap == senior
+  // everything else open
