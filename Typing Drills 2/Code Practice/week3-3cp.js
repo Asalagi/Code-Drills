@@ -218,3 +218,10 @@ finally gave up and looked at solution and all I needed to do was
 MOVE THE CODE TO THE SECOND P0. I feel like an idiot!
 */
 
+function findNextSquare(sq) {
+    let root = Math.sqrt(sq);
+    let whole = Math.round(root);
+    return sq === whole * whole ? Math.pow(root + 1, 2) : -1;
+  }
+
+// did all on my own! Super proud considering how the last Kata went.
