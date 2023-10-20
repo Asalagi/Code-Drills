@@ -283,5 +283,27 @@ function divisors(integer) {
   };
 
   // was so very close, my concept was there just need some work, forgot about .push
-  
 
+
+function SeriesSum(n){
+    let num = 0;
+    for(let i = 0; 0 < n; i++){
+        num += 1 / (1 + i * 3)
+  }
+  return num.toFixed(2);
+}
+
+// got all the way to num += and than couldn't figure out how to fomulate math
+// also had no idea i could use to fix to achieve decimal placing
+
+function minMax(arr) {  
+    let lowHigh = arr.sort((a, b) => a - b);
+    let low = lowHigh.slice(0,1);
+    let high = lowHigh.slice(-1);
+    let profit = low.concat(high);
+    return profit;
+}
+
+/* well not best practice but I did acheive it on my own so I'm pretty happu about that
+ could have been a simple [Math.min(...arr), Math.max(...arr)], so I do feel slightly 
+ dumb I didn't think of that. */
