@@ -259,3 +259,29 @@ var number = function(busStops){
 /* OMG!!! I DID IT ALL ON MY OWN! Might be length and not best practice but I DID IT!
 best practice listed -> busStops.reduce((rem, [on, off]) => rem + on - off, 0)
 */
+
+// WEEK THREE DAY FIVE - 10/20/2023
+function points(games) {
+    let sum = 0;
+    for(let i = 0; i < games.length; i++){
+        if (games[i][0] > games[i][2])
+        sum += 3;
+        if (games[i][0] == games[i][2])
+        sum += 1;
+    }
+    return sum;
+}
+
+// had to look up, struggled with how to get top number added to top
+
+function divisors(integer) {
+    let divs = [];
+    for(let i = 2; i < integer; i++){
+      if (integer % i === 0) divs.push(i)
+    }
+    return divs.length !== 0 ? divs : `${integer} is prime`;
+  };
+
+  // was so very close, my concept was there just need some work, forgot about .push
+  
+
