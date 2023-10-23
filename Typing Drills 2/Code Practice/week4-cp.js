@@ -45,3 +45,21 @@ function getDivisorsCnt(n){
     }
     return count;
   }
+
+//
+
+function stray(numbers) {  
+    let num = numbers.sort();
+      if (num[0] !== num[1]){
+          return num[0];
+      } else {
+          return num[num.length - 1]
+      }
+  }
+
+  // needed to remember to sort
+
+  
+  function solution(nums){
+    return nums !== null ? nums.sort((a,b) => (a - b)) : [];
+  }
