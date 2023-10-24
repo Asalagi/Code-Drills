@@ -117,3 +117,43 @@ function expressionMatter(a, b, c) {
 
 // Needed help couldn't figure out how to get there
 
+function finalGrade (exam, projects) {
+    if (exam > 90 || projects > 10){
+      return 100;
+    } else if (exam > 75 && projects > 4){
+      return 90;
+    } else if (exam > 50 && projects > 1){
+      return 75;
+    } else {
+      return 0;
+    }
+  }
+
+  // Another all on my own no help! YAY ME!
+
+  function isPalindrome(x) {
+    const palString = x.replace(/[^A-Za-z]/g, "").toLowerCase();
+    const reverseString = palString.split("").reverse().join("");
+    return palString === reverseString ? true : false;
+}
+
+// could have x.split("").reverse().join("").toLowerCase() === x.toLowerCase() ? true : false
+
+
+function arithmetic(a, b, operator){
+    switch(operator) {
+        case 'add': return a + b;
+        break;
+        case 'subtract': return a - b;
+        break;
+        case 'divide': return a / b;
+        break;
+        case 'multiply': return a * b;
+        break;
+        default: 'give me a operator';
+    }
+}
+
+// started out with an if statement and after writing it i realized since I have more
+// that 2 conditionals I should use a switch statement instead, and so I did.
+
