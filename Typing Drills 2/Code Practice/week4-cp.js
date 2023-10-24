@@ -90,3 +90,30 @@ function powersOfTwo(n){
     }
   return nums;
   }
+
+
+  function breakChocolate(n,m) {
+    return 0 < n * m - 1 ? n * m - 1 : 0;
+  }
+  
+  //^ did all on my own no help at all. YAY ME!
+
+  function correct(string){
+    return string.replace(/5/g, "S").replace(/0/g, "O").replace(/1/g, "I");
+   }
+
+
+function expressionMatter(a, b, c) {
+    let highest = Math.max(
+        a + b + c,
+        a * b * c,
+        a * b + c,
+        a * (b + c),
+        a + b * c,
+        (a + b) * c
+    )
+    return highest;
+}
+
+// Needed help couldn't figure out how to get there
+
