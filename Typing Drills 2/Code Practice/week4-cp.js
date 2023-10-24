@@ -157,3 +157,17 @@ function arithmetic(a, b, operator){
 // started out with an if statement and after writing it i realized since I have more
 // that 2 conditionals I should use a switch statement instead, and so I did.
 
+
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+
+function sumStr(a,b) {
+    let nums = Number(a) + Number(b);
+    return nums.toString();
+}
+//^ Did all by me onsies! YAY ME!!
+
