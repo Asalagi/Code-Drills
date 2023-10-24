@@ -63,3 +63,30 @@ function stray(numbers) {
   function solution(nums){
     return nums !== null ? nums.sort((a,b) => (a - b)) : [];
   }
+
+
+// WEEK FOUR DAY TWO - 10/24/2023
+
+String.prototype.toAlternatingCase = function () {
+    let str = '';
+    for(let i = 0; i < this.length; i++){
+        if(this.charAt(i) === this.charAt(i).toLowerCase()) {
+            str+= this.charAt(i).toUpperCase();
+        } else if (this.charAt(i) === this.charAt(i).toUpperCase()){
+            str+= this.charAt(i).toLowerCase() 
+        } else {
+            str+= this.charAt(i);
+        }
+    }
+    return str;
+}
+
+// could have used split and mapped it
+
+function powersOfTwo(n){
+    let nums = [];
+    for(let i = 0; i <= n; i++){
+      nums.push(Math.pow(2,i))
+    }
+  return nums;
+  }
