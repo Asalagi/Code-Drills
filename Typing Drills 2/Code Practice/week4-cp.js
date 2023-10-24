@@ -171,3 +171,33 @@ function sumStr(a,b) {
 }
 //^ Did all by me onsies! YAY ME!!
 
+function findDifference(a, b) {
+    return Math.abs(a.reduce((total, i) => total * i) - b.reduce((total, i) => total * i));
+}
+
+// needed help
+
+function greet(language) {
+	const speak = {
+        english: "Welcome",
+        czech: "Vitejte",
+        danish: "Velkomst",
+        dutch: "Welkom",
+        estonian: "Tere tulemast",
+        finnish: "Tervetuloa",
+        flemish: "Welgekomen",
+        french: "Bienvenue",
+        german: "Willkommen",
+        irish: "Failte",
+        italian: "Benvenuto",
+        latvian: "Gaidits",
+        lithuanian: "Laukiamas",
+        polish: "Witamy",
+        spanish: "Bienvenido",
+        swedish: "Valkommen",
+        welsh: "Croeso"
+    }
+    return speak[language] || speak.english;
+}
+
+// needed help, tried a switch but that was no go.
