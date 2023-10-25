@@ -201,3 +201,23 @@ function greet(language) {
 }
 
 // needed help, tried a switch but that was no go.
+
+
+// WEEK FOUR DAY THREE - 10/24/2023
+
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+
+function nbDig(n, d){
+    let count = 0;
+    for(let i = 0; i <= n; i++){
+        let square = (Math.pow(i, 2) + '').split('');
+        square.forEach((val) => val == d ? count++ : null)
+    }
+    return count;
+}
+
+// had to look up did not understand what they were asking
+
