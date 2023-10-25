@@ -221,3 +221,14 @@ function nbDig(n, d){
 
 // had to look up did not understand what they were asking
 
+function oddCount(n){
+    return Math.floor(n/2);
+}
+
+// simple easy why didn't i think of this :(
+
+function reverseList(list) {
+    return list.reverse();
+}
+
+// YAY! Did one by myself!!
