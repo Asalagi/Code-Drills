@@ -203,7 +203,7 @@ function greet(language) {
 // needed help, tried a switch but that was no go.
 
 
-// WEEK FOUR DAY THREE - 10/24/2023
+// WEEK FOUR DAY THREE - 10/25/2023
 
 var a = "code";
 var b = "wa.rs";
@@ -232,3 +232,49 @@ function reverseList(list) {
 }
 
 // YAY! Did one by myself!!
+
+
+function howMuchILoveYou(nbPetals) {
+    let petals = ["I love you",
+        "a little",
+        "a lot",
+        "passionately",
+        "madly",
+        "not at all"
+    ];
+
+    return petals[(nbPetals - 1) % 6];
+  }
+
+// tried to loop, lost focus, needed some help.
+
+
+function createArray(number){
+    var newArray = [];
+    for(var counter = 1; counter <= number; counter++){
+      newArray.push(counter);
+    }
+    return newArray;
+  }
+
+
+  var isAnagram = function(test, original) {
+    let setOne = original.toLowerCase().split('').sort().join('');
+    let setTwo = test.toLowerCase().split('').sort().join('');
+    if (setOne === setTwo) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+
+function calculateYears(principal, interest, tax, desired) {
+    let y = 0;
+    for (y = 0; principal < desired; y++){
+         principal += principal * interest * (1 - tax);
+    }
+    return y;
+ }
+
+ // got it started good but lost with math part,
