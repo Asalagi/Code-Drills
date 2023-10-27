@@ -317,4 +317,35 @@ function reverseLetter(str) {
 // spot on just needed help with regex
 
 
+function roundToNext5(n){
+    return Math.ceil(n / 5) * 5;
+}
 
+
+function mouthSize(animal) {
+    return animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
+}
+
+// did all on my own. YAY ME!
+
+function well(x){
+    let good = x.filter((val) => val === 'good').length;
+    if (good >= 3){
+        return 'I smell a series!';
+    } else if (good >= 1) {
+        return 'Publish!';
+    } else {
+        return 'Fail!';
+    }
+}
+
+// did goood, needed help with the .length on the filter
+
+
+function maxMultiple(divisor, bound){
+    return Math.floor(bound / divisor) * divisor;
+}
+
+/* I DID IT! I probably didn't have to use math.floor, but I did it. I felt like
+I wasn't getting it but I did and I did it all on my own!
+*/
