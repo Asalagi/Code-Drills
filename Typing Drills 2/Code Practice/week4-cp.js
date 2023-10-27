@@ -278,3 +278,43 @@ function calculateYears(principal, interest, tax, desired) {
  }
 
  // got it started good but lost with math part,
+
+
+ // WEEK FOUR DAY FOUR - 10/27/2023
+
+const sequenceSum = (begin, end, step) => {
+    let sum = 0;
+    for(let n = begin; n <= end; n = n + step){
+        sum = sum + n
+    }
+    return sum;
+};
+
+/* begin = num stating at
+end = num ending at
+step = what to count by, so if 2 count by 2 -> 2 4 6 8
+*/
+
+function toBinary(n){
+    return Number(n.toString(2));
+}
+
+// I don't get binary numbers. 
+
+const flip = (d, a) => {
+    if (d === 'R'){
+        return a.sort((a, b) => a - b);
+    } else{
+        return a.sort((a, b) => b - a);
+    }
+}
+
+
+function reverseLetter(str) {
+    return str.replace(/[^a-z]/gi, '').split('').reverse().join('');
+}
+
+// spot on just needed help with regex
+
+
+
