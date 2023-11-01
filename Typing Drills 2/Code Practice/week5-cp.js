@@ -32,3 +32,30 @@ function binToDec(bin) {
 }
 
 
+function solution(digits){
+    let result = 0;
+    for(let i = 0; i < digits.length; i++){
+        let num = digits.substring(i, 5);
+        if(Number(num) > result){
+            result = Number(num);
+        }
+    }
+    return result;
+}
+
+// had to look up, didnt know where to start. 
+
+
+function squareOrSquareRoot(array) {
+    return array.map(i => Math.sqrt(i) == Math.sqrt(i).toFixed(0) ? Math.sqrt(i) : i * i);  
+}
+
+// if number has sqrt find it, if it does pow it. 4 sqrt is 2, 3 has no square root so pow and it 9
+
+
+function addLength(str) {
+    let strSp = str.split(' ');
+    return strSp.map((i) => `${i} ${i.length}`);
+}
+
+// got the split then started to over think :(
