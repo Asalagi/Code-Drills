@@ -21,3 +21,14 @@ function dutyFree(normPrice, discount, hol){
 }
 
 // YAY ME! Did all on my own no help
+
+function _if(bool, func1, func2) {
+    return bool ? func1() : func2();
+}
+
+
+function binToDec(bin) {
+    return parseInt(bin, 2);
+}
+
+
