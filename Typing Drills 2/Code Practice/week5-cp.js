@@ -59,3 +59,30 @@ function addLength(str) {
 }
 
 // got the split then started to over think :(
+
+// ADDING IN WEEK 5 WITH WEEK 6
+// WEEK SIX DAY ONE - 11/06/2023
+
+var replaceDots = function(str) {
+    return str.replaceAll('.', '-');
+}
+
+
+function hello(name) {
+    return `Hello, ${name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : 'World'}!`;
+}
+ 
+
+function triangular( n ) {
+    return n > 0 ? n * (n + 1) / 2 : 0; 
+}
+
+
+function mxdiflg(a1, a2) {
+    if (a1.length === 0 || a2.length === 0) return -1
+    let l1 = a1.map(str => str.length)
+    let l2 = a2.map(str => str.length)
+    return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1))
+  }
+
+// did not get this assignment at all!
