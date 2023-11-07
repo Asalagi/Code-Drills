@@ -86,3 +86,13 @@ function mxdiflg(a1, a2) {
   }
 
 // did not get this assignment at all!
+
+function capitalize(s){
+    return [s.split('').map((val, i) => i % 2 === 0 ? val.toUpperCase() : val.toLowerCase()).join(''),
+    s.split('').map((val, i) => i % 2 !== 0 ? val.toUpperCase() : val.toLowerCase()).join('')]
+};
+
+//got through a loop for the first part then lost how to do the second and pass it
+
+
+
