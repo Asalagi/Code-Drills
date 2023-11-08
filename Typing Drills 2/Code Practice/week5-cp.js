@@ -87,6 +87,8 @@ function mxdiflg(a1, a2) {
 
 // did not get this assignment at all!
 
+//WEEK SIX DAY TWO - 11/07/2023
+
 function capitalize(s){
     return [s.split('').map((val, i) => i % 2 === 0 ? val.toUpperCase() : val.toLowerCase()).join(''),
     s.split('').map((val, i) => i % 2 !== 0 ? val.toUpperCase() : val.toLowerCase()).join('')]
@@ -95,4 +97,48 @@ function capitalize(s){
 //got through a loop for the first part then lost how to do the second and pass it
 
 
+//WEEK SIX DAY THREE - 11/08/2023
+
+function solve(s){
+    let upper = (s.match(/[A-Z]/g) || '').length;
+    let lower = (s.match(/[a-z]/g) || '').length;
+  return upper > lower ? s.toUpperCase() : s.toLowerCase();
+}
+
+
+function countPositivesSumNegatives(input){
+    let pos = 0;
+    let neg = 0;
+    if(input === null || input.length === 0){
+        return [];
+    } else {
+        input.forEach((num) => num > 0 ? pos++ : neg+= num);
+    }
+    return [pos, neg];
+}
+// worked for the first 2 problems when i used filter and reduce. had too look up. 
+
+
+
+function hero(bullets, dragons){
+    return bullets >= dragons * 2 ? true : false;
+}
+// did all on my own
+
+
+function grow(x){
+    let sum = 1;
+    for(let i = 0; i <= x.length; i++){
+        sum = sum * x[i];
+    }
+    return sum;
+}
+// did monstly on my own. 
+
+
+function betterThanAverage(classPoints, yourPoints) {
+    let average = classPoints.reduce((a, b) => a + b);
+    return yourPoints > average / classPoints.length ? true : false;
+}
+// all on my own. YAY ME!
 
