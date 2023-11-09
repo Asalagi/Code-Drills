@@ -142,3 +142,58 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 // all on my own. YAY ME!
 
+
+//WEEK SIX DAY FOUR - 11/09/2023
+
+function reverseWords(str) {
+    return str.split('').reverse().join('').split(' ').reverse().join(' ');
+}
+
+// that was interesting, started to over think it
+
+function oddOrEven(array) {
+    let sum = array.reduce((a, b) => a+b, 0);
+    return sum % 2 == 0 || sum == 0 ? 'even' : 'odd';
+ }
+
+
+ function bmi(weight, height) {
+    let bodyMass = weight / Math.pow(height, 2);
+    if(bodyMass <= 18.5){
+        return 'Underweight';
+    } else if(bodyMass <= 25){
+        return 'Normal';
+    } else if(bodyMass <= 30){
+        return 'Overweight';
+    } else {
+        return 'Obese';
+    }
+  }
+
+  // DID ALL ON MY OWN! YAY ME!
+
+function fakeBin(x){
+    let biStr = "";
+    for(let i = 0; i < x.length; i++){
+        if(x[i] < 5){
+            biStr += 0;
+        } else {
+            biStr += 1;
+        }
+    }
+    return biStr;
+}
+
+//struggled. could have mapped over too
+
+var min = function(list){
+    let findMin = list.sort((a,b) => a-b);
+    return list[0]
+}
+
+var max = function(list){
+    let findMax = list.sort((a,b) => b-a);
+    return list[0];
+}
+
+// did all on my own! YAY ME!
