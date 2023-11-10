@@ -197,3 +197,32 @@ var max = function(list){
 }
 
 // did all on my own! YAY ME!
+
+//WEEK SIX DAY FIVE - 11/10/2023
+function smash (words) {
+    return words.toString().replaceAll(',', ' ');
+};
+
+
+function smash (words) {
+    return words.join(' ');
+ };
+
+ // could have done both, both worked fine
+
+
+function check(a, x) {
+   return a.includes(x);
+}
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return distanceToPump <= (mpg * fuelLeft);
+};
+
+function DNAtoRNA(dna) {
+   return dna.replaceAll('T', 'U')
+}
+
+function stringToArray(string){
+    return string.split(' ');
+  }
