@@ -163,3 +163,19 @@ function peopleWithAgeDrink(old) {
   return old < 14 ? 'drink toddy' : old < 18 ? 'drink coke' : old < 21 ? 'drink beer' : 'drink whisky';
 };
 
+
+function removeUrlAnchor(url){
+  let end = url.indexOf('#');
+  return end > 0 ? url.slice(0, end) : url;
+}
+// could have done url.split('#')[0]; 
+// But I did all on my own so I am proud of myself for doing it on my own
+
+
+function factorial(n) {
+  if (n < 0 || n > 12)
+    throw new RangeError();
+  return n <= 1 ? 1 : n * factorial(n - 1);
+}
+// I did not get this one at all, had to use unlock solution.
+
