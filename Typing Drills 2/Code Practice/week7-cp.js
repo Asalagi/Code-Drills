@@ -101,3 +101,65 @@ class Kata {
 }
 
 
+function otherAngle(a, b) {
+  return 180 - (a + b);
+}
+
+
+function removeExclamationMarks(s) {
+  return s.replaceAll('!', '');
+}
+
+
+function updateLight(current) {
+  if(current === 'green'){
+    return 'yellow';
+  } else if (current === 'yellow'){
+    return 'red';
+  } else {
+    return 'green'
+  }
+}
+// could have done current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+
+
+function twoSort(s) {
+  let sorting = s.sort();
+  return sorting[0].split('').join('***');
+}
+
+
+function fixTheMeerkat(arr) {
+  return arr.reverse();
+}
+
+
+function solution(a, b){
+  return a.length > b.length ? `${b + a + b}` : `${a + b + a}`;
+}
+
+
+function sortByLength (array) {
+    return array.sort((a,b) => a.length - b.length);
+}
+
+
+function findMultiples(integer, limit) {
+  let values = [];
+  for(let i = integer; i <= limit; i+= integer){
+    values.push(i);
+  }
+  return values;
+}
+// was so close but needed help
+
+
+function shortcut (string) {
+  return string.replace(/[aeiou]/g,'');
+}
+
+
+function peopleWithAgeDrink(old) {
+  return old < 14 ? 'drink toddy' : old < 18 ? 'drink coke' : old < 21 ? 'drink beer' : 'drink whisky';
+};
+
