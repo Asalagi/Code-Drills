@@ -261,3 +261,32 @@ function divisibleBy(numbers, divisor){
 }
 // struggled a little was almost there but need some work. 
 // dumdum i could have just used filter :(
+
+function sayHello( name, city, state ) {
+  return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`;
+}
+// did all on my own YAY ME!
+
+
+function flattenAndSort(array) {
+  return array.flat(1).sort((a,b) => a - b);
+}
+
+
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter((val) => val % 2 === 0);
+}
+// did on my own YAY ME!
+
+
+function minValue(values){
+  let sorted = values.sort();
+  let result = [];
+  for(let i = 0; i < sorted.length; i++){
+    if(result. indexOf(sorted[i]) === -1){
+      result.push(sorted[i]);
+    }
+  }
+  return +result.join('');
+}
+// needed help on tjis one :(
