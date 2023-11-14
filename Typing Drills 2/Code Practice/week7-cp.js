@@ -179,3 +179,29 @@ function factorial(n) {
 }
 // I did not get this one at all, had to use unlock solution.
 
+
+//WEEK SEVEN DAY TWO - 11/14/2023
+function dontGiveMeFive(start, end){
+  let count = 0;
+  for(let i = start; i < end; i++){
+    if (!/5/.test(i)){
+      count++;
+    }
+  }
+  return count;
+}
+// got it all on my own other than the !/5/.test(i) part
+
+
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter((val) => !geese.includes(val))
+};
+// needed help :(
+
+
+function capitalizeWord(word) {
+  return word.slice(0, 1).toUpperCase() + word.slice(1, word.length);
+}
+// did on my own
+// could have done word[0].toUpperCase() + word.slice(1)
