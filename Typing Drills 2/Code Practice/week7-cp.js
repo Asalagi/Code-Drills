@@ -205,3 +205,59 @@ function capitalizeWord(word) {
 }
 // did on my own
 // could have done word[0].toUpperCase() + word.slice(1)
+
+
+function getRealFloor(n) {
+  if (n <= 0){
+    return n;
+  } else if (n < 13){
+    return n - 1;
+  } else {
+    return n - 2;
+  }
+}
+// ^ orignal
+function getRealFloor(n) {
+  return n <= 0 ? n : n < 13 ? n - 1 : n - 2;
+}
+//^ refined
+// did on my own
+
+
+var capitals = function (word) {
+  let letters = [];
+  for(let i = 0; i < word.length; i++){
+    if(word[i].match(/[A-Z]/)){
+      letters.push(i)
+    }
+  }
+  return letters;
+};
+// needed a little help
+
+
+function checkAlive (health) {
+  if (health <= 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+
+function getChar(c){
+  return String.fromCharCode(c);
+}
+
+
+function divisibleBy(numbers, divisor){
+  let nums = [];
+  for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] % divisor === 0){
+      nums.push(numbers[i]);
+    }
+  }
+  return nums;
+}
+// struggled a little was almost there but need some work. 
+// dumdum i could have just used filter :(
