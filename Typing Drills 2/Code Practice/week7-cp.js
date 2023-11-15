@@ -290,3 +290,37 @@ function minValue(values){
   return +result.join('');
 }
 // needed help on tjis one :(
+
+//WEEK SEVEN DAY THREE - 11/15/2023
+function correctTail(body, tail){
+  return body.slice(body.length - 1) === tail;
+}
+// fixed problem on my own
+
+
+function replace(s){
+  return s.replace('/[a,e,i,o,u]/gi', '!');
+}
+
+
+function replace(s){
+  return s.replaceAll(/[aeiou]/gi, '!');
+}
+
+
+function fizzbuzz(n){
+  let fbArr = [];
+  for(let i = 1; i <= n; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+      fbArr.push('FizzBuzz');
+    } else if(i % 5 === 0){
+      fbArr.push('Buzz')
+    } else if(i % 3 === 0){
+      fbArr.push('Fizz')
+    } else {
+      fbArr.push(i);
+    }
+  }
+  return fbArr;
+}
+// tried so very hard and was so very close, but I did need help
