@@ -456,3 +456,25 @@ function printArray(array){
   return array.join();
 }
 // did on my own, started to over think but started to use my brain
+
+
+function array(string) {
+  let split = string.split(',');
+  return split.length > 2 ? split.slice(1, -1).join(' ') : null;
+}
+// did all on my own YAY ME!
+ 
+
+function reverse(string){
+  return string.split(' ').reverse().join(' ');
+}
+
+
+function pillars(numPill, dist, width) {
+  return numPill < 2 ? 0: ((numPill-2)*width) + ((100*dist)*(numPill-1)); 
+}
+
+
+function formatMoney(amount){
+  return `$${amount.toFixed(2)}`;
+}
