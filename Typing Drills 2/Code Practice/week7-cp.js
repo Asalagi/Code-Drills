@@ -383,3 +383,45 @@ function remainder(n, m){
   }
 }
 // did all on my own YAY ME!
+
+
+//WEEK SEVEN DAY FOUR - 11/16/2023
+function generateRange(min, max, step){
+  let result = [];
+  for(let i = min; i <= max; i+= step){
+    result.push(i);
+  }
+  return result;
+}
+// did most on my own just needed help with the i+= step, i had step++
+
+
+function factorial(n){
+  if(n === 0){
+    return 1;
+  }
+  for(let i = n - 1; i >= 1; i--){
+    n = n * i
+  }
+  return n;
+}
+// did not get this one
+
+
+function isPowerOfTwo(n){
+  return Number.isInteger(Math.log2(n))
+}
+// i did not get this one, had to look up, doesn't make a whole lot of sense to me
+
+
+function howManyDalmatians(number){
+  if (number <= 10){
+    return "Hardly any";
+  } else if(number <= 50){
+    return "More than a handful!";
+  } else if(number === 101){
+    return "101 DALMATIANS!!!";
+  } else {
+    return "Woah that's a lot of dogs!";
+  }
+}
