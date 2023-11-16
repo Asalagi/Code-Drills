@@ -425,3 +425,34 @@ function howManyDalmatians(number){
     return "Woah that's a lot of dogs!";
   }
 }
+
+
+function sumOfMinimums(arr) {
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+      sum+= Math.min(...arr[i]);
+    }
+  return sum;
+}
+
+
+function getSize(width, height, depth){
+  let area = 2 * (height * width) + 2 * (height * depth) + 2 * (width * depth);
+  let volume = width * height * depth;
+  return [area, volume];
+}
+// needed help with area formula.
+
+
+function mango(quantity, price){
+  let q = Math.floor(quantity / 3);
+  let remain = quantity % 3;
+  return (q * 2 * price) + (remain * price);
+}
+// could have done price * (quantity - Math.floor(quantity / 3));
+
+
+function printArray(array){
+  return array.join();
+}
+// did on my own, started to over think but started to use my brain
