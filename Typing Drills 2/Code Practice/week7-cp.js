@@ -533,3 +533,46 @@ function rowWeights(array){
 // could have dont filter and reduce as well
 
 
+function sumOfDifferences(arr) {
+  let sorted = arr.sort((a,b) => b - a);
+  let sum = 0;
+  for(let i = 0; i < sorted.length - 1; i++){
+    sum+= sorted[i] - sorted[i + 1];
+  }
+  return sum;
+}
+// was almost there but needed some help
+
+
+function seatsInTheater(nCols, nRows, col, row) {
+  let columns = nCols - col + 1;
+  let rows = nRows - row;
+  return  columns * rows;
+}
+
+
+var SequenceSum = (function() {
+  function SequenceSum() {}
+
+  SequenceSum.showSequence = function(count) {
+    var sum = 0;
+    var str = "";
+    if (count === 0) {
+      return "0=0";
+    } else if (count < 0) {
+      return count + "<0";
+    } else {
+      for (var i = 0; i < count; i++) {
+        sum += i;
+        str += i + "+";
+      };
+    sum += count;
+    str += count + " = " + sum;
+    return str;
+    };
+  };
+
+  return SequenceSum;
+
+})();
+// had to unlock :(
