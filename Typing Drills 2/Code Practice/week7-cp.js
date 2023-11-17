@@ -478,3 +478,58 @@ function pillars(numPill, dist, width) {
 function formatMoney(amount){
   return `$${amount.toFixed(2)}`;
 }
+
+
+//WEEK SEVEN DAY FIVE - 11/17/2023
+function evaporator(content, evap_per_day, threshold){ 
+  let leftOver = content;
+  let percent = 100;
+  while(percent > threshold){
+    percent = percent - percent * (evap_per_day / percent);
+    leftOver+= 1;
+  }
+  return leftOver;
+}
+// this made zero sense to me
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  return Math.floor(Math.sqrt(Math.pow(age1, 2) + Math.pow(age2, 2) + Math.pow(age3, 2) + Math.pow(age4, 2) + Math.pow(age5, 2) + Math.pow(age6, 2) + Math.pow(age7, 2) + Math.pow(age8, 2)) / 2);
+}
+// age x age add alltogether squareroot / 2
+// first try worked fine, want to try a more compact way of doing this.
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  let ages = [age1, age2, age3, age4, age5, age6, age7, age8];
+  let pow = ages.map((x) => Math.pow(x, 2));
+  let sum = pow.reduce((x, y) => x + y);
+  return Math.floor(Math.sqrt(sum) / 2);
+}
+
+
+function mystery() {
+  var results = {sanity: 'Hello'};
+  return results;
+}
+// nothing was wrong here, maybe just written funky but nothing was wrong
+
+
+function stringClean(s){
+  return s.replace(/[0-9]/g, '');
+}
+
+
+function rowWeights(array){
+  let teamEven = [];
+  let teamOdd = [];
+    for(let i = 0; i < array.length; i++){
+      if(i % 2 === 0){
+        teamEven.push(array[i]);
+      } else {
+        teamOdd.push(array[i]);
+      }
+    }
+  return [teamEven.reduce((a,b) => a + b, 0), teamOdd.reduce((a,b) => a + b, 0)];
+}
+// could have dont filter and reduce as well
+
+
