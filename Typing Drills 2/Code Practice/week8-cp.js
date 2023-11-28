@@ -49,3 +49,23 @@ function animal(obj){
     return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
 }
 // did on my own. I needed a win today.
+
+
+//RANDOM DAY - 11/28
+function validateUsr(username) {
+    let expression = /^([_a-z0-9]){4,16}$/;
+    let res =  expression.test(username) 
+    return res;
+}
+
+var websites = [];
+for(let i = 0; i < 1000; i++){
+    websites.push('codewars')
+}
+
+
+
+
+
+
+
