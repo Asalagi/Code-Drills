@@ -51,7 +51,7 @@ function animal(obj){
 // did on my own. I needed a win today.
 
 
-//RANDOM DAY - 11/28
+//RANDOM DAY - 11/28 & 11/29
 function validateUsr(username) {
     let expression = /^([_a-z0-9]){4,16}$/;
     let res =  expression.test(username) 
@@ -64,8 +64,19 @@ for(let i = 0; i < 1000; i++){
 }
 
 
+function nearestSq(n){
+    let square = Math.sqrt(n);
+    let round = Math.round(square)
+    return Math.pow(round, 2);
+}
 
-
-
-
-
+function sameCase(a, b) {
+    if (!a.match(/^[A-Za-z]$/) || !b.match(/^[A-Za-z]$/)) {
+      return -1;
+    } else if ((a.match(/^[A-Z]$/) && b.match(/^[A-Z]$/)) || (a.match(/^[a-z]$/) && b.match(/^[a-z]$/))) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+  // could have done to uppercase to lowercase comparasion
