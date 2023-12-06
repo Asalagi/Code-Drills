@@ -80,3 +80,43 @@ function sameCase(a, b) {
     }
   }
   // could have done to uppercase to lowercase comparasion
+
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+  return name === 'Santa Claus' && password === 'Ho Ho Ho!';
+};
+
+
+function derive(coefficient,exponent) {
+  return `${coefficient * exponent}x^${exponent - 1}`;
+}
+
+
+function sumMul(n,m){
+  let sum = 0;
+  for(let i = n; i < m; i++){
+    if (i % n === 0){ // forgot about this part
+      sum += i;
+    }
+  }
+  return n > 0 && m > 0 ? sum : 'INVALID' ;
+}
+// did okay just needed some help getting there
+
+
+function removeDuplicateWords (s) {
+  let split = s.split(' ');
+  return split.filter((item, index) => split.indexOf(item) === index).join(' ');
+}
+// neede help
+
+
+var findAverage = function (nums) {
+  let numLeng = nums.length;
+  let sum = nums.reduce((value, total) => value + total);
+  return sum / numLeng;
+}
+//should have condensed it more but thats okay it worked
+
